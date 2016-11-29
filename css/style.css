@@ -2,13 +2,13 @@ body{
   text-align: center;
 }
 i{color: black;}
-#actions{
+#action{
   position: absolute;
   top: 1em;
   right: 1em;
   display: none;
 }
-#actions a{cursor: pointer;}
+#action a{cursor: pointer;}
 #camara{
   display: inline-block;
   position: relative;

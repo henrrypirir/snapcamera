@@ -12,13 +12,11 @@
       })
 
       snap.addEventListener("click", function(){
-        alert("click pausa");
         camara.snap()
         document.getElementById('action').style.display = "block"
       })
 
       downloadBtn.addEventListener('click', function(){
-        alert("click descarga");
         var imagenURL = camara.canvas.toDataURL('image/png')
 
         var link = document.getElementById("download-link")
@@ -31,11 +29,9 @@
       cancelBtn.addEventListener("click", function(){
         camara.unSnap()
         document.getElementById('action').style.display = "none"
-        alert("click cancel");
       })
 
       stickersBtn.addEventListener("click", function(){
-        alert("click div stickes");
         document.getElementById('stickers').style.display = "block"
       })
 

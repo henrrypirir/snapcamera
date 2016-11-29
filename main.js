@@ -37,7 +37,7 @@
 
       function addSticker() {
         camara.addSticker(this)
-        document.getElementById('actions').style.display = "none"
+        document.getElementById('action').style.display = "none"
       }
     })
 

@@ -58,7 +58,7 @@ class Camara{
   draw(){
     this.contexto.drawImage(this.video, 0,0)
     if (this.sticker != null)
-    this.contexto.drawImage(this.sticker, 20,20,90,90)
+      this.contexto.drawImage(this.sticker, 20,20,90,90)
   }
 
   isBrowserValid(){

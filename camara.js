@@ -52,7 +52,7 @@ class Camara{
     if (this.video.paused || this.video.ended) return
 
     this.draw();
-    setTimeOut(()=> this.loop(), 1000 / 30)
+    setInterval(()=> this.loop(), 1000 / 30)
   }
 
   draw(){

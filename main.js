@@ -2,7 +2,7 @@
 
     var camara = new Camara("video", "canvas", function(){
 
-      var snap = document.getElementById('span')
+      var snap = document.getElementById('snap')
       var downloadBtn = document.getElementById('download')
       var cancelBtn = document.getElementById('cancel')
       var stickersBtn = document.getElementById('sticker')
@@ -13,16 +13,16 @@
 
       snap.addEventListener("click", function(){
         camara.snap()
-        document.getElementById('actions').style.display = "block"
+        document.getElementById('action').style.display = "block"
       })
 
       cancelBtn.addEventListener("click", function(){
         camara.unSnap()
-        document.getElementById('actions').style.display = "none"
+        document.getElementById('action').style.display = "none"
       })
 
       stickersBtn.addEventListener("click", function(){
-        document.getElementById('actions').style.display = "block"
+        document.getElementById('stickers').style.display = "block"
       })
 
       downloadBtn.addEventListener('click', function(){

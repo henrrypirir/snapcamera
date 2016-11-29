@@ -7,9 +7,9 @@
       var cancelBtn = document.getElementById('cancel')
       var stickersBtn = document.getElementById('sticker')
 
-      // document.querySelectorAll(".sticker").forEach(function(el) {
-      //   el.addEventListener("click", addSticker)
-      // })
+      document.querySelectorAll(".sticker").forEach(function(el) {
+        el.addEventListener("click", addSticker)
+      })
 
       snap.addEventListener("click", function(){
         alert("click pausa");
@@ -38,11 +38,11 @@
         alert("click div stickes");
         document.getElementById('stickers').style.display = "block"
       })
-      //
-      // function addSticker() {
-      //   camara.addSticker(this)
-      //   document.getElementById('action').style.display = "none"
-      // }
+
+      function addSticker() {
+        camara.addSticker(this)
+        document.getElementById('stickers').style.display = "none"
+      }
     })
 
 })()

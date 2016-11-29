@@ -16,15 +16,6 @@
         document.getElementById('action').style.display = "block"
       })
 
-      cancelBtn.addEventListener("click", function(){
-        camara.unSnap()
-        document.getElementById('action').style.display = "none"
-      })
-
-      stickersBtn.addEventListener("click", function(){
-        document.getElementById('stickers').style.display = "block"
-      })
-
       downloadBtn.addEventListener('click', function(){
         var imagenURL = camara.canvas.toDataURL('image/png')
 
@@ -33,6 +24,15 @@
         link.download = "photo.png"
 
         link.click();
+      })
+
+      cancelBtn.addEventListener("click", function(){
+        camara.unSnap()
+        document.getElementById('action').style.display = "none"
+      })
+
+      stickersBtn.addEventListener("click", function(){
+        document.getElementById('stickers').style.display = "block"
       })
 
       function addSticker() {

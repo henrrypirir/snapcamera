@@ -7,14 +7,14 @@ class Camara{
       this.sticker = null
       this.devices = []
 
-      navigator.mediaDevices.enumerateDevices()
-        .then((devices)=>{
-          devices.forEach((devices) => {
-            if(devices.kind === "videoinput")
-              console.log(device.deviceId);
-              this.devices.push(device)
-          })
-        })
+      // navigator.mediaDevices.enumerateDevices()
+      //   .then((devices)=>{
+      //     devices.forEach((devices) => {
+      //       if(devices.kind === "videoinput")
+      //         console.log(device.deviceId);
+      //         this.devices.push(device)
+      //     })
+      //   })
 
       navigator.webkitGetUserMedia({video:true}, (localMediaStream)=>{
         this.set_video(localMediaStream)

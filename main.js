@@ -7,9 +7,9 @@
       var cancelBtn = document.getElementById('cancel')
       var stickersBtn = document.getElementById('sticker')
 
-      document.querySelectorAll(".sticker").forEach(function(el) {
-        el.addEventListener("click", addSticker)
-      })
+      // document.querySelectorAll(".sticker").forEach(function(el) {
+      //   el.addEventListener("click", addSticker)
+      // })
 
       snap.addEventListener("click", function(){
         camara.snap()
@@ -31,14 +31,14 @@
         document.getElementById('action').style.display = "none"
       })
 
-      stickersBtn.addEventListener("click", function(){
-        document.getElementById('stickers').style.display = "block"
-      })
-
-      function addSticker() {
-        camara.addSticker(this)
-        document.getElementById('action').style.display = "none"
-      }
+      // stickersBtn.addEventListener("click", function(){
+      //   document.getElementById('stickers').style.display = "block"
+      // })
+      //
+      // function addSticker() {
+      //   camara.addSticker(this)
+      //   document.getElementById('action').style.display = "none"
+      // }
     })
 
 })()
